@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stripe Pricing Table</title>
+    <style>
+        /* Remove margin and padding from body and html elements */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Remove margin from the container of the pricing table */
+        .pricing-table-container {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    <stripe-pricing-table 
-        pricing-table-id="prctbl_1PJmKmP6C6Is5C8ikGavcwsN"
-        publishable-key="pk_live_51PI0rhP6C6Is5C8irF9L5ZTSNYSaC8HAYjvEgLVlXJPsirNJGZ2CkwECzakspZ9sILVJ31LkJhB3C0qMJHxAXRkS00vD7aUkNk">
-    </stripe-pricing-table>
+    <div class="pricing-table-container">
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1PJmKmP6C6Is5C8ikGavcwsN"
+            publishable-key="pk_live_51PI0rhP6C6Is5C8irF9L5ZTSNYSaC8HAYjvEgLVlXJPsirNJGZ2CkwECzakspZ9sILVJ31LkJhB3C0qMJHxAXRkS00vD7aUkNk">
+        </stripe-pricing-table>
+    </div>
 </body>
 </html>
